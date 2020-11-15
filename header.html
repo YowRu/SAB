@@ -1,0 +1,149 @@
+<div class="row1">
+    <div class="top">
+        <a href="" class="fb"></a>
+        <a href="" class="line"></a>
+    </div>
+    <div class="down">
+        <a href="index.html">
+            <h1>logo</h1>
+        </a>
+        <nav>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+        <div class="right">
+            <a href="#banner" class="border">首頁</a>
+            <a href="#introduce">耐震標章介紹</a>
+            <a href="#apply">申請流程</a>
+            <a href="#pass">通過標章建築</a>
+            <a href="#form">諮詢表單</a>
+            <a href="#contact">聯絡我們</a>
+        </div>
+        <div class="menu">
+            <a href="#introduce">耐震標章介紹</a>
+            <a href="#apply">申請流程</a>
+            <a href="#pass">通過標章建築</a>
+            <a href="#form">諮詢表單</a>
+            <a href="#contact">聯絡我們</a>
+            <div class="social">
+                <a href="" class="fb"></a>
+                <a href="" class="line"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg"></div>
+<script>
+    var $H = $(window).height();
+    var $W = $(window).width();
+    $('header .bg').height($H + 70);
+    var h = $('header .row1 .menu').height();
+    if ($H - 40 < h) {
+        $('header .row1 .menu').css({
+            'overflow-y': 'scroll'
+        });
+    }
+    $(window).resize(function () {
+        var $H = $(window).height();
+        var $W = $(window).width();
+        $('header .menu').hide();
+        $('header .bg').height($H + 70);
+        var h = $('header .row1 .menu').height();
+        if ($H - 40 < h) {
+            $('header .row1 .menu').css({
+                'overflow-y': 'scroll'
+            });
+        }
+    });
+    $('header .row1 .menu a').click(function () {
+        $('header .row1 .menu').hide();
+        $('header .bg').toggle();
+        $("body").toggleClass('menuOpen');
+    });
+    /*border*/
+    $('header .row1 .down .right a').click(function () {
+        $(this).addClass('border');
+        $(this).siblings('a').removeClass('border');
+    });
+    /*menu*/
+    $('header nav').click(function () {
+        $('header .menu').fadeToggle(800);
+        $('header .bg').toggle();
+        $("body").toggleClass('menuOpen');
+    });
+    $('header .bg').click(function () {
+        $('header .menu').fadeToggle(500);
+        $('header .bg').hide();
+        $("body").toggleClass('menuOpen');
+    });
+    /**/
+    $(function () {
+        $('a[href=#banner]').click(function () {
+            if ($W > 1000) {
+                $('html,body').animate({
+                    scrollTop: $('#banner').offset().top - 198
+                }, 800);
+            } else {
+                $('html,body').animate({
+                    scrollTop: $('#banner').offset().top - 83
+                }, 800);
+            }
+        });
+        $('a[href=#introduce]').click(function () {
+            if ($W > 1000) {
+                $('html,body').animate({
+                    scrollTop: $('#introduce').offset().top - 198
+                }, 800);
+            } else {
+                $('html,body').animate({
+                    scrollTop: $('#introduce').offset().top - 83
+                }, 800);
+            }
+        });
+        $('a[href=#apply]').click(function () {
+            if ($W > 1000) {
+                $('html,body').animate({
+                    scrollTop: $('#apply').offset().top - 198
+                }, 800);
+            } else {
+                $('html,body').animate({
+                    scrollTop: $('#apply').offset().top - 83
+                }, 800);
+            }
+        });
+        $('a[href=#pass]').click(function () {
+            if ($W > 1000) {
+                $('html,body').animate({
+                    scrollTop: $('#pass').offset().top - 198
+                }, 800);
+            } else {
+                $('html,body').animate({
+                    scrollTop: $('#pass').offset().top - 83
+                }, 800);
+            }
+        });
+        $('a[href=#form]').click(function () {
+            if ($W > 1000) {
+                $('html,body').animate({
+                    scrollTop: $('#form').offset().top - 198
+                }, 800);
+            } else {
+                $('html,body').animate({
+                    scrollTop: $('#form').offset().top - 83
+                }, 800);
+            }
+        });
+        $('a[href=#contact]').click(function () {
+            if ($W > 1000) {
+                $('html,body').animate({
+                    scrollTop: $('#contact').offset().top - 198
+                }, 800);
+            } else {
+                $('html,body').animate({
+                    scrollTop: $('#contact').offset().top - 83
+                }, 800);
+            }
+        });
+    });
+</script>

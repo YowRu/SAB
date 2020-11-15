@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/loading.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
+    <title> 臺中市土木技師公會</title>
+</head>
+
+<body>
+    <header></header>
+    <div id="main">
+        <div class="banner" id="banner">
+            <img src="img/bannerBig.png" alt="">
+        </div>
+        <div class="row" id="introduce">
+            <div class="row1">
+                <p class="title">耐震標章圖樣</p>
+                <div class="flex">
+                    <img src="img/1.png" alt="">
+                    <img src="img/2.png" alt="">
+                </div>
+            </div>
+            <div class="row2">
+                <p class="title">認識耐震標章，打造安全居住空間，落實建物施工品質</p>
+                <ul class="flex">
+                    <li>
+                        <img src="img/3.svg" alt="">
+                        <div class="text">
+                            <p>什麼是耐震(設計)標章呢?</p>
+                            <p>建築物的「耐震設計品質」是經由公正客觀第三方專業單位(臺中市土木技師公會)針對建築物的設計進行審查後，所取得的證明標章。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/4.svg" alt="">
+                        <div class="text">
+                            <p>耐震設計標章VS耐震標章</p>
+                            <p>標章的發給分為二階段，必須先取得耐震設計標章，才能申請耐震標章。 臺中市土木技師公會針對申請人的不同需求下，可單獨申請耐震標章，替設計成果把關。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/5.svg" alt="">
+                        <div class="text">
+                            <p>擁有耐震(設計)標章的優點是什麼?</p>
+                            <p>優點為協助建築物的耐震設計上多一道專業的設計審查與施工查證， 將消費者看不到的興建過程，交由耐震標章第三方專業單位來把關，讓消費者可以買的更安心。 </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" id="apply">
+            <div class="row1">
+                <p class="title orange">如何申請耐震設計標章?</p>
+                <img src="img/6.png" alt="" class="pc">
+                <img src="img/6M.png" alt="" class="mobileIMG">
+            </div>
+            <div class="row2">
+                <p class="title orange">如何申請耐震標章?</p>
+                <img src="img/7.png" alt="" class="pc">
+                <img src="img/7M.png" alt="" class="mobileIMG">
+            </div>
+        </div>
+        <div class="row" id="pass">
+            <div class="bg">
+                <p class="title white">耐震標章通過建築</p>
+                <ul class="flex">
+                    <li>
+                        <img src="img/buliding.png" alt="">
+                        <p>南屯龍院</p>
+                    </li>
+                    <li>
+                        <img src="img/buliding.png" alt="">
+                        <p>南屯龍院</p>
+                    </li>
+                    <li>
+                        <img src="img/buliding.png" alt="">
+                        <p>南屯龍院</p>
+                    </li>
+                    <li>
+                        <img src="img/buliding.png" alt="">
+                        <p>南屯龍院</p>
+                    </li>
+                    <li>
+                        <img src="img/buliding.png" alt="">
+                        <p>南屯龍院</p>
+                    </li>
+                    <li>
+                        <img src="img/buliding.png" alt="">
+                        <p>南屯龍院</p>
+                    </li>
+                    <li>
+                        <img src="img/buliding.png" alt="">
+                        <p>南屯龍院</p>
+                    </li>
+                    <li>
+                        <img src="img/buliding.png" alt="">
+                        <p>南屯龍院</p>
+                    </li>
+                </ul>
+                <div class="btn">看更多案例</div>
+            </div>
+        </div>
+        <div class="row" id="form">
+            <p class="title">諮詢表單</p>
+            <p>有任何疑問或預約耐震標章認證申請，將有專人與您聯絡我們將竭誠為您服務。</p>
+            <form action="">
+                <div class="flex">
+                    <label for="company">公司名稱</label>
+                    <input type="text" id="company" autocomplete="off" placeholder="請輸入公司名稱" required />
+                </div>
+                <div class="flex">
+                    <label for="name">聯絡人姓名</label>
+                    <input type="text" id="name" autocomplete="off" placeholder="請輸入聯絡人姓名" required>
+                </div>
+                <div class="flex">
+                    <label for="phone">電話</label>
+                    <input type="tel" id="phone" autocomplete="off" placeholder="例：0900000000" required />
+                </div>
+                <div class=" flex">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" autocomplete="off" placeholder="例：sample@ex.com" required />
+                </div>
+                <div class="flex">
+                    <label for="question">方便聯絡時間</label>
+                    <select id="question" required>
+                        <option value="">請選擇</option>
+                        <option value="09:00-12:00">09:00-12:00</option>
+                        <option value="13:00-17:00">13:00-17:00</option>
+                        <option value="18:00-20:00">18:00-20:00</option>
+                    </select>
+                </div>
+                <div class="flex">
+                    <label for="content">留言</label>
+                    <textarea cols="90" rows="10" id="content" autocomplete="off" placeholder="請輸入留言"
+                        required></textarea>
+                </div>
+                <button type="submit" name="submit">確認送出</button>
+            </form>
+        </div>
+        <div class="row" id="contact" href="#contact">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1221943428086!2d120.6825777152301!3d24.167446978632558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917de9f6b92bd%3A0x6d9255b17c6381cd!2z6Ie65Lit5biC5Zyf5pyo5oqA5bir5YWs5pyD!5e0!3m2!1szh-TW!2stw!4v1605177817265!5m2!1szh-TW!2stw"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+    </div>
+    <footer></footer>
+    <script>
+
+    </script>
+</body>
+
+</html>
