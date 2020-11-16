@@ -103,6 +103,49 @@
                 <div class="btn">看更多案例</div>
             </div>
         </div>
+        <div class="caseWP">
+            <div class="case">
+                <div class="close">X</div>
+                <table>
+                    <tr>
+                        <th>案名</th>
+                        <th>耐震設計標章取得日期</th>
+                        <th>耐震標章取得日期</th>
+                        <th>公有</th>
+                    </tr>
+                    <tr>
+                        <td>1. 潤泰創新國際股份有限公司⌈敦仁案新建工程⌋</td>
+                        <td>109.09.04</td>
+                        <td>109.09.04</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1. 潤泰創新國際股份有限公司⌈敦仁案新建工程⌋</td>
+                        <td>109.09.04</td>
+                        <td>109.09.04</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>1. 潤泰創新國際股份有限公司⌈敦仁案新建工程⌋</td>
+                        <td>109.09.04</td>
+                        <td>109.09.04</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>1. 潤泰創新國際股份有限公司⌈敦仁案新建工程⌋</td>
+                        <td>109.09.04</td>
+                        <td>109.09.04</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1. 潤泰創新國際股份有限公司⌈敦仁案新建工程⌋</td>
+                        <td>109.09.04</td>
+                        <td>109.09.04</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <div class="row" id="form">
             <p class="title">諮詢表單</p>
             <p>有任何疑問或預約耐震標章認證申請，將有專人與您聯絡我們將竭誠為您服務。</p>
@@ -149,7 +192,18 @@
     </div>
     <footer></footer>
     <script>
-
+        var $H = $(window).height();
+        var $W = $(window).width();
+        $('.caseWP').width($W);
+        $('.caseWP').height($H);
+        $('.caseWP .close').click(function () {
+            $('.caseWP').fadeOut();
+        });
+        $('.btn').click(function () {
+            $('.caseWP').css({
+                'display': 'flex'
+            });
+        });
     </script>
 </body>
 

@@ -530,6 +530,64 @@ img.mobileIMG {
     display: none;
 }
 
+.caseWP {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    overflow: hidden;
+}
+
+.case {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: scroll;
+}
+
+.case .close {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: -54px;
+    top: -83px;
+    color: #FFFCF2;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.case table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.case table tr {
+    height: 54px;
+}
+
+.case table th {
+    background-color: #EB5E28;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.case table td {
+    background-color: #fff;
+    border: 1px solid #E4E4E4;
+    color: rgb(143, 143, 143);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 footer {
     max-width: 1920px;
     width: 100%;
@@ -783,6 +841,10 @@ footer .down {
     #main #pass .flex {
         width: 85%;
     }
+
+    .case table td {
+        text-align: left;
+    }
 }
 
 @media(max-width:800px) {
@@ -976,6 +1038,10 @@ footer .down {
     img.mobileIMG {
         width: 70%;
     }
+
+    .case {
+        width: 90%;
+    }
 }
 
 @media(max-width:414px) {
@@ -991,6 +1057,17 @@ footer .down {
     #main #apply .row2 img.mobileIMG,
     img.mobileIMG {
         width: 80%;
+    }
+
+    .case {
+        justify-content: flex-start;
+        padding-top: 160px;
+        box-sizing: border-box;
+    }
+
+    .case .close {
+        right: -18px;
+        top: 95px
     }
 
     footer .r ul {
