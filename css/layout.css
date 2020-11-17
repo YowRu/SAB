@@ -270,8 +270,9 @@ header .row1 .menu .social {
 }
 
 #main {
+    max-width: 1920px;
     width: 100%;
-    margin-top: 198px;
+    margin: 198px auto 0px;
 }
 
 #main .banner {
@@ -324,7 +325,7 @@ header .row1 .menu .social {
 
 #main #introduce .row2 .flex li .text p {
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 24px;
     word-wrap: break-word;
     text-align: center;
@@ -332,7 +333,7 @@ header .row1 .menu .social {
 }
 
 #main #introduce .row2 .flex li .text p:nth-child(1) {
-    font-weight: 400;
+    font-weight: bold;
     margin: 25px auto 10px;
 }
 
@@ -541,6 +542,7 @@ img.mobileIMG {
 }
 
 .case {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -555,8 +557,8 @@ img.mobileIMG {
     position: absolute;
     width: 44px;
     height: 44px;
-    right: -54px;
-    top: -83px;
+    right: -23px;
+    top: 150px;
     color: #FFFCF2;
     font-size: 2.5rem;
     cursor: pointer;

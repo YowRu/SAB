@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/loading.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.24.4/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="css/layout.css">
     <title> 臺中市土木技師公會</title>
 </head>
@@ -196,6 +197,7 @@
         var $W = $(window).width();
         $('.caseWP').width($W);
         $('.caseWP').height($H);
+        $('.case').height($H);
         $('.caseWP .close').click(function () {
             $('.caseWP').fadeOut();
         });
@@ -203,7 +205,53 @@
             $('.caseWP').css({
                 'display': 'flex'
             });
+            var $h = $('.case table').height();
+            const distance = ($H - $h) / 3;
+            $('.case .close').css({
+                'top': distance
+            });
         });
+
+        /*form submit*/
+        let sendButton = document.querySelector('button');
+
+        function send() {
+            let company = document.querySelector('#company').value;
+            let name = document.querySelector('#name').value;
+            let phone = document.querySelector('#phone').value;
+            let mail = document.querySelector('#mail').value;
+            let question = document.querySelector('#question').value;
+            let content = document.querySelector('#content').value;
+            if (company !== '' && name !== '' && phone !== '' && mail !== '' && question !== '' && content !== '') {
+                $.ajax({
+                    type: "get",
+                    url: "https://script.google.com/macros/s/AKfycbyy-CgqX8Gm1DoyrkTgTuLuC9TW4oby80uvU4QIf_UXUVhFEx5J/exec",
+                    data: {
+                        "company": company,
+                        "name": name,
+                        "phone": phone,
+                        "mail": mail,
+                        "question": question,
+                        "content": content
+                    },
+                    dataType: "JSON",
+                    success: function (response) {
+                        if (response == true) {
+                            swal({
+                                title: "表單已送出!",
+                                type: "success"
+                            })
+                            $('.swal2-popup .swal2-styled.swal2-confirm').click(
+                                function () {
+                                    window.location.reload();
+                                });
+                        }
+                    },
+                });
+            }
+        };
+
+        sendButton.addEventListener('click', send);
     </script>
 </body>
 
