@@ -586,8 +586,13 @@ img.mobileIMG {
     border: 1px solid #E4E4E4;
     color: rgb(143, 143, 143);
     text-align: center;
-    padding: 10px;
+    padding: 10px 5px;
     box-sizing: border-box;
+}
+
+.case table .left {
+    text-align: left;
+    padding-left: 15px;
 }
 
 footer {
@@ -843,10 +848,6 @@ footer .down {
     #main #pass .flex {
         width: 85%;
     }
-
-    .case table td {
-        text-align: left;
-    }
 }
 
 @media(max-width:800px) {
@@ -920,6 +921,11 @@ footer .down {
 }
 
 @media(max-width:700px) {
+    .case table {
+        position: absolute;
+        top: 55px;
+    }
+
     #main #form form {
         padding: 26px 0 37px;
     }
@@ -999,6 +1005,10 @@ footer .down {
     img.mobileIMG {
         width: 60%;
     }
+
+    .case {
+        width: 90%;
+    }
 }
 
 @media(max-width:500px) {
@@ -1042,7 +1052,7 @@ footer .down {
     }
 
     .case {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -1067,9 +1077,16 @@ footer .down {
         box-sizing: border-box;
     }
 
+    .case table th,
+    .case table td {
+        font-size: 0.8rem;
+    }
+
     .case .close {
-        right: -18px;
-        top: 95px
+        right: -5px;
+        top: 95px;
+        width: 33px;
+        height: 33px;
     }
 
     footer .r ul {
@@ -1114,6 +1131,14 @@ footer .down {
         width: 250px;
     }
 
+    .case {
+        width: 100%;
+    }
+
+    .case table th,
+    .case table td {
+        font-size: 0.75rem;
+    }
 
 }
 
