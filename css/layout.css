@@ -400,6 +400,10 @@ header .row1 .menu .social {
     text-align: center;
     color: #fff;
     margin-top: 12px;
+    width: 270px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 #main #pass .btn {
@@ -691,6 +695,15 @@ footer .down {
     #main #pass .flex {
         width: 85%;
     }
+
+    #main #pass .flex li {
+        width: 27%;
+    }
+
+    #main #pass .flex li:nth-child(7),
+    #main #pass .flex li:nth-child(8) {
+        display: none;
+    }
 }
 
 @media(max-width:1200px) {
@@ -711,21 +724,12 @@ footer .down {
         background-size: cover;
     }
 
-    #main #pass .flex li {
-        width: 27%;
-    }
-
     #main .banner img {
         height: 550px;
     }
 
     #main #introduce .row2 .flex li {
         width: 30%;
-    }
-
-    #main #pass .flex li:nth-child(7),
-    #main #pass .flex li:nth-child(8) {
-        display: none;
     }
 
     #main #form form .flex {
