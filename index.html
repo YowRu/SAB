@@ -376,7 +376,7 @@
         <div class="row" id="form">
             <p class="title">諮詢表單</p>
             <p>有任何疑問或預約耐震標章認證申請，將有專人與您聯絡我們將竭誠為您服務。</p>
-            <form action="">
+            <form action="" id="tcce">
                 <div class="flex">
                     <label for="company">公司名稱</label>
                     <input type="text" id="company" autocomplete="off" placeholder="請輸入公司名稱" required />
@@ -430,16 +430,6 @@
         $('.btn').click(function () {
             $('.caseWP').css({
                 'display': 'flex'
-            });
-            var $h = $('.case table').height();
-            let distance
-            if ($W <= 700) {
-                distance = 0;
-            } else {
-                ($H - $h) / 3;
-            }
-            $('.case .close').css({
-                'top': distance
             });
         });
 
