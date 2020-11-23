@@ -563,6 +563,7 @@ img.mobileIMG {
     cursor: pointer;
 }
 
+#pass table,
 .case table {
     max-width: 1200px;
     width: 80%;
@@ -570,10 +571,12 @@ img.mobileIMG {
     margin: 30px auto 10px;
 }
 
+#pass table tr,
 .case table tr {
     height: 54px;
 }
 
+#pass table th,
 .case table th {
     background-color: #EB5E28;
     color: #fff;
@@ -582,6 +585,7 @@ img.mobileIMG {
     box-sizing: border-box;
 }
 
+#pass table td,
 .case table td {
     background-color: #fff;
     border: 1px solid #E4E4E4;
@@ -591,6 +595,7 @@ img.mobileIMG {
     box-sizing: border-box;
 }
 
+#pass table .left,
 .case table .left {
     text-align: left;
     padding-left: 15px;
