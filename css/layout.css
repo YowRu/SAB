@@ -1144,6 +1144,11 @@ footer .down {
         width: 250px;
     }
 
+    #pass table,
+    .case table {
+        width: 95%;
+    }
+
     .case table th,
     .case table td {
         font-size: 0.75rem;
