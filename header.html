@@ -147,5 +147,10 @@
                 }, 800);
             }
         });
+        $('a[href=#tel]').click(function () {
+            $('html,body').animate({
+                scrollTop: $('#tel').offset().top - 83
+            }, 800);
+        });
     });
 </script>
